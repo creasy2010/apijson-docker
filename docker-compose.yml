@@ -1,0 +1,18 @@
+version: '3'
+services:
+  application:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: yangxiaodong/apijson:0.0.1-beta.0
+    environment:
+      - ADMIN_HOST=admin
+      - REDIS_HOST=redis1
+      - REDIS_PORT=6379
+    ports:
+      - "8888:8080"
+    restart: always
+    volumes:
+      - ./bootstrap/target:/usr/project/bootstrap
+    command: ['java', '-jar', '/usr/project/bootstrap/bootstrap-2.0.jar']
+
