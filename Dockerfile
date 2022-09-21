@@ -10,4 +10,4 @@ ENV NODE_ENV = production DOCKER_FLAG = true TZ="Asia/Shanghai"
 WORKDIR /usr/src/app
 COPY ./target/apijson-boot-5.2.0.jar app.jar
 EXPOSE 8080
-CMD [ "java","-jar","./apijson-boot-5.2.0.jar"]
+CMD [ "java","-jar","./app.jar"]
