@@ -14,14 +14,14 @@ limitations under the License.*/
 
 package apijson.demo;
 
-import apijson.router.APIJSONRouterVerifier;
+import apijson.framework.APIJSONVerifier;
 
 
 /**安全校验器，校验请求参数、角色与权限等
  * 具体见 https://github.com/Tencent/APIJSON/issues/12
  * @author Lemon
  */
-public class DemoVerifier extends APIJSONRouterVerifier<Long> {  // APIJSONVerifier<Long> {
+public class DemoVerifier extends APIJSONVerifier<Long> {
 	public static final String TAG = "DemoVerifier";
 
 	// 重写方法来自定义字段名等	

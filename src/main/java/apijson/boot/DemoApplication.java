@@ -52,7 +52,6 @@ import apijson.orm.Parser;
 import apijson.orm.SQLConfig;
 import apijson.orm.SQLExecutor;
 import apijson.orm.Verifier;
-import apijson.router.APIJSONRouterApplication;
 import unitauto.MethodUtil;
 import unitauto.MethodUtil.Argument;
 import unitauto.MethodUtil.InstanceGetter;
@@ -87,8 +86,6 @@ public class DemoApplication implements WebServerFactoryCustomizer<ConfigurableS
     unitauto.Log.DEBUG = Log.DEBUG = true;
     APIJSONParser.IS_PRINT_BIG_LOG = true;
     APIJSONApplication.init();
-    APIJSONRouterApplication.init();
-    System.out.println("\n\n<<<<<<<<< 本 Demo 在 resources/static 内置了 APIAuto，Chrome/Firefox 打开 http://localhost:8080 即可调试(端口号根据项目配置而定) ^_^ >>>>>>>>>\n");
   }
 
   // SpringBoot 2.x 自定义端口方式
@@ -145,23 +142,14 @@ public class DemoApplication implements WebServerFactoryCustomizer<ConfigurableS
     //			Log.e(TAG, "加载 DB2 驱动失败，请检查 pom.xml 中 com.ibm.db2 版本是否存在以及可用 ！！！");
     //		}
 
-    try { //加载驱动程序
-      Log.d(TAG, "尝试加载 TDengine 驱动 <<<<<<<<<<<<<<<<<<<<< ");
-      Class.forName("com.taosdata.jdbc.TSDBDriver");
-      Log.d(TAG, "成功加载 TDengine 驱动！>>>>>>>>>>>>>>>>>>>>> ");
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
-      Log.e(TAG, "加载 TDengine 驱动失败，请检查 pom.xml 中 com.taosdata.jdbc 版本是否存在以及可用 ！！！");
-    }
-
-    try { //加载驱动程序
-      Log.d(TAG, "尝试加载 NebulaGraph 驱动 <<<<<<<<<<<<<<<<<<<<< ");
-      Class.forName("com.vesoft.nebula.jdbc.impl.NebulaDriver");
-      Log.d(TAG, "成功加载 NebulaGraph 驱动！>>>>>>>>>>>>>>>>>>>>> ");
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
-      Log.e(TAG, "加载 NebulaGraph 驱动失败，请检查 pom.xml 中 org.nebula-contrib 版本是否存在以及可用 ！！！");
-    }
+//    try { //加载驱动程序
+//      Log.d(TAG, "尝试加载 TDengine 驱动 <<<<<<<<<<<<<<<<<<<<< ");
+//      Class.forName("com.taosdata.jdbc.TSDBDriver");
+//      Log.d(TAG, "成功加载 TDengine 驱动！>>>>>>>>>>>>>>>>>>>>> ");
+//    } catch (ClassNotFoundException e) {
+//      e.printStackTrace();
+//      Log.e(TAG, "加载 TDengine 驱动失败，请检查 pom.xml 中 com.taosdata.jdbc 版本是否存在以及可用 ！！！");
+//    }
 
     // APIJSON 配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
