@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.1.3",
   "createdTime": "2022-9-21 14:57:37",
-  "updatedTime": "2022-9-21 19:20:21",
+  "updatedTime": "2022-9-21 19:27:27",
   "dbConns": [],
   "profile": {
     "default": {
@@ -459,7 +459,8 @@
         "refKey": "extProps",
         "hideInGraph": true
       }
-    ]
+    ],
+    "menuWidth": "255px"
   },
   "entities": [
     {
@@ -1749,7 +1750,24 @@
           "id": "440D5806-6A02-449C-88CA-838D7203FA62"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "F93737F7-F7E0-47C5-8D81-17225B10C31C",
+          "refEntity": "0178A2C2-DC48-474E-AED0-1F86DF273A93",
+          "refField": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        },
+        {
+          "myField": "C173EAAD-69EF-4D59-AC02-D7BE42B11314",
+          "refEntity": "7C63DF7D-2C67-4313-8F95-34137F845B7A",
+          "refField": "7177B76B-77BB-4BA1-98EC-8F6B31AB3D84",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -2154,7 +2172,16 @@
           "id": "0A695BE3-8621-4100-A33A-205A2D63E51E"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "4DDF70E0-779E-4725-9878-30673B9FDF7D",
+          "refEntity": "0178A2C2-DC48-474E-AED0-1F86DF273A93",
+          "refField": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -2794,7 +2821,16 @@
           "id": "1FD2C5D8-57CC-4949-9C29-414BD27885EE"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "A2FA6F70-F4F5-457F-B2E5-4A263427CC3E",
+          "refEntity": "0178A2C2-DC48-474E-AED0-1F86DF273A93",
+          "refField": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -4122,7 +4158,16 @@
           "id": "C2810A17-8238-4117-98E7-300A23690CBD"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "3F899784-3099-47E6-B998-F32C263B8E23",
+          "refEntity": "C873A5E9-1338-43AA-A5DC-57BCD8BCC5AA",
+          "refField": "63D2C0E1-6145-477B-B2D2-9AD2DF160C9D",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -4813,7 +4858,16 @@
           "id": "70BAC16A-A548-4982-803D-DB41D49ADFB6"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "60828606-2E5C-4CFB-B48F-7E4A4EB6F9F0",
+          "refEntity": "0178A2C2-DC48-474E-AED0-1F86DF273A93",
+          "refField": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -5678,7 +5732,254 @@
       "id": "2123D5FA-22BB-449F-86A1-A863F21470CA"
     }
   ],
-  "diagrams": [],
+  "diagrams": [
+    {
+      "defKey": "基础配置",
+      "defName": "",
+      "relationType": "field",
+      "canvasData": {
+        "cells": [
+          {
+            "id": "63dbf97f-f478-4b75-b8c9-a7d76ac1a17c",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "961e5fcc-8a05-4100-8794-94b12ad18277",
+              "port": "63D2C0E1-6145-477B-B2D2-9AD2DF160C9D%in"
+            },
+            "target": {
+              "cell": "c26935ff-146a-4eff-869d-c2792436981e",
+              "port": "3F899784-3099-47E6-B998-F32C263B8E23%out"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "352b1cf4-48dc-4533-9d02-14e0d040571e",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "c42277f5-2670-4c3a-898b-0f0b89c71c49",
+              "port": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4%in"
+            },
+            "target": {
+              "cell": "aeab6377-3680-4fdc-acc6-1ff789a86e30",
+              "port": "60828606-2E5C-4CFB-B48F-7E4A4EB6F9F0%out"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "33f62084-8854-405e-8bd1-3906225ec2c0",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "c42277f5-2670-4c3a-898b-0f0b89c71c49",
+              "port": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4%in"
+            },
+            "target": {
+              "cell": "60db12ad-27f0-4c83-98e6-2a2a14caf04e",
+              "port": "F93737F7-F7E0-47C5-8D81-17225B10C31C%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "49b764b7-f94d-45fb-9164-bc0076076625",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "c42277f5-2670-4c3a-898b-0f0b89c71c49",
+              "port": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4%out"
+            },
+            "target": {
+              "cell": "961e5fcc-8a05-4100-8794-94b12ad18277",
+              "port": "4DDF70E0-779E-4725-9878-30673B9FDF7D%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "961e5fcc-8a05-4100-8794-94b12ad18277",
+            "shape": "table",
+            "position": {
+              "x": 1381,
+              "y": 120
+            },
+            "count": 0,
+            "originKey": "C873A5E9-1338-43AA-A5DC-57BCD8BCC5AA"
+          },
+          {
+            "id": "cc2d0ae7-1205-4311-a2d2-0b22768ecedb",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "c42277f5-2670-4c3a-898b-0f0b89c71c49",
+              "port": "83318CD2-1CA1-4CF3-AE6C-B129584E56D4%in"
+            },
+            "target": {
+              "cell": "f6c223b7-1ca4-4984-af59-807db5c99750",
+              "port": "A2FA6F70-F4F5-457F-B2E5-4A263427CC3E%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "737db2c5-8f5b-4334-9ac9-0b2a935f021b",
+            "shape": "table",
+            "position": {
+              "x": 1521,
+              "y": 596
+            },
+            "count": 0,
+            "originKey": "5AA1FBB1-4F23-4E2E-ACC3-65A861507763"
+          },
+          {
+            "id": "eb1a22ce-69ca-4994-827f-d2ed374544af",
+            "shape": "table",
+            "position": {
+              "x": 1080,
+              "y": 949
+            },
+            "count": 0,
+            "originKey": "EA0B23AF-34FD-447F-B89D-1C3403967BBE"
+          },
+          {
+            "id": "de5458c7-dbe1-45c8-b824-6a7e6b8e509a",
+            "shape": "table",
+            "position": {
+              "x": 1036,
+              "y": 1377
+            },
+            "count": 0,
+            "originKey": "686E4546-B8FA-4F06-BF0E-D6E4FCD9542F"
+          },
+          {
+            "id": "cc84c41a-70c9-44b4-93cc-bd3bebb47c90",
+            "shape": "table",
+            "position": {
+              "x": 487,
+              "y": 1306
+            },
+            "count": 0,
+            "originKey": "64E4B105-28DA-4EE7-B10A-FA6F82A8A5D7"
+          },
+          {
+            "id": "f6c223b7-1ca4-4984-af59-807db5c99750",
+            "shape": "table",
+            "position": {
+              "x": 522,
+              "y": 1041
+            },
+            "count": 0,
+            "originKey": "D0A8658A-AD22-47F2-A418-B6B441961070"
+          },
+          {
+            "id": "60db12ad-27f0-4c83-98e6-2a2a14caf04e",
+            "shape": "table",
+            "position": {
+              "x": 522,
+              "y": 760
+            },
+            "count": 0,
+            "originKey": "7C63DF7D-2C67-4313-8F95-34137F845B7A"
+          },
+          {
+            "id": "fe585b30-2c46-42b2-bdbd-7a041fcaa7af",
+            "shape": "table",
+            "position": {
+              "x": 50,
+              "y": 110
+            },
+            "count": 0,
+            "originKey": "62F3BDC0-AE84-4F2F-87FB-7BAA7C036CB2"
+          },
+          {
+            "id": "c26935ff-146a-4eff-869d-c2792436981e",
+            "shape": "table",
+            "position": {
+              "x": 440,
+              "y": 110
+            },
+            "count": 0,
+            "originKey": "143D13BC-37D9-42F1-B31F-44050DABD465"
+          },
+          {
+            "id": "c42277f5-2670-4c3a-898b-0f0b89c71c49",
+            "shape": "table",
+            "position": {
+              "x": 519,
+              "y": 417
+            },
+            "count": 0,
+            "originKey": "0178A2C2-DC48-474E-AED0-1F86DF273A93",
+            "fillColor": "#ffc000"
+          },
+          {
+            "id": "d76181c8-800c-4e30-a9af-f11e6954608a",
+            "shape": "table",
+            "position": {
+              "x": 1009,
+              "y": 540
+            },
+            "count": 0,
+            "originKey": "948C801D-3082-41F1-BDCF-9308D772B27E"
+          },
+          {
+            "id": "aeab6377-3680-4fdc-acc6-1ff789a86e30",
+            "shape": "table",
+            "position": {
+              "x": -40.5,
+              "y": 655
+            },
+            "count": 0,
+            "originKey": "0C17714C-7A15-438E-B54A-72658F6D323E"
+          },
+          {
+            "id": "98c79315-817a-443e-9e79-a5d1111d88e3",
+            "shape": "table",
+            "position": {
+              "x": -45,
+              "y": 1041
+            },
+            "count": 0,
+            "originKey": "29C6FC79-675D-428F-8811-8FE4C1EB8D25"
+          },
+          {
+            "id": "8a7a43c2-7fc1-42a4-844c-09a2b51e9252",
+            "shape": "table",
+            "position": {
+              "x": 50,
+              "y": -131
+            },
+            "count": 0,
+            "originKey": "AE278E83-4853-408F-BBB8-205AF0A17945"
+          },
+          {
+            "id": "aeda11a2-aa0c-4555-ad52-cfab6aab12f2",
+            "shape": "table",
+            "position": {
+              "x": 1381,
+              "y": -290
+            },
+            "count": 1,
+            "originKey": "0C17714C-7A15-438E-B54A-72658F6D323E"
+          }
+        ]
+      },
+      "id": "9D2571A3-2BD6-4EA1-96C8-DCBE214D6D8B"
+    }
+  ],
   "standardFields": [
     {
       "defKey": "personInfo",
