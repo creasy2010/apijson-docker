@@ -1,6 +1,6 @@
 version: '3'
 services:
-  application:
+  apiJSON:
     build:
       context: ./
       dockerfile: Dockerfile
@@ -14,5 +14,5 @@ services:
     restart: always
     volumes:
       - ./bootstrap/target:/usr/project/bootstrap
-    command: ['java', '-jar', '/usr/project/bootstrap/bootstrap-2.0.jar']
+    command: ['java', '-jar', '/usr/src/app/app.jarr']
 
