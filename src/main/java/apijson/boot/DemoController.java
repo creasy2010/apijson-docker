@@ -755,7 +755,6 @@ public class DemoController extends APIJSONController<Long> {
 	@Override
 	public JSONObject logout(HttpSession session) {
 		SESSION_MAP.remove(session.getId());
-
 		long userId;
 		try {
 			userId = DemoVerifier.getVisitorId(session);//必须在session.invalidate();前！
