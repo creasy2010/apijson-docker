@@ -105,7 +105,7 @@ public class DemoApplication implements WebServerFactoryCustomizer<ConfigurableS
           .allowedMethods("*")
           .allowCredentials(true)
           .exposedHeaders(DemoController.APIJSON_DELEGATE_ID)  // Cookie 和 Set-Cookie 怎么设置都没用 ,Cookie,Set-Cookie")   // .exposedHeaders("*")
-          .maxAge(3600);
+          .maxAge(60*60*24*365);
       }
     };
   }
