@@ -740,9 +740,12 @@ public class DemoController extends APIJSONController<Long> {
 		session.setAttribute(USER_, user); //用户
 		session.setAttribute(PRIVACY_, privacy); //用户隐私信息
 		session.setAttribute(REMEMBER, remember); //是否记住登录
-		session.setMaxInactiveInterval(60*60*24*(remember ? 7 : 1)); //设置session过期时间
+		session.setMaxInactiveInterval(60*60*24*(remember ? 7*365 : 1)); //设置session过期时间
+
+
 
 		response.put(REMEMBER, remember);
+		response.put("JSESSIONID", session.getId());
 		response.put(DEFAULTS, defaults);
 		response.put("JSESSIONID", session.getId());
 		return response;
