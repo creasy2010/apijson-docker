@@ -744,6 +744,7 @@ public class DemoController extends APIJSONController<Long> {
 
 		response.put(REMEMBER, remember);
 		response.put(DEFAULTS, defaults);
+		response.put("JSESSIONID", session.getId());
 		return response;
 	}
 

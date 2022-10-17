@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.1.3",
   "createdTime": "2022-9-21 14:57:37",
-  "updatedTime": "2022-10-6 10:49:56",
+  "updatedTime": "2022-10-11 11:41:45",
   "dbConns": [],
   "profile": {
     "default": {
@@ -5443,7 +5443,7 @@
         },
         {
           "defKey": "updateDate",
-          "defName": "跟新时间",
+          "defName": "更新时间",
           "comment": "",
           "type": "",
           "len": "",
@@ -5966,6 +5966,1002 @@
       ],
       "correlations": [],
       "indexes": []
+    },
+    {
+      "id": "6798B29F-9CD2-4D70-A902-C08DCFF9B594",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "ZMMMirrCaseRecord",
+      "defName": "镜像成功案例记录",
+      "comment": "",
+      "properties": {
+        "partitioned by": "(date string)",
+        "row format delimited": "",
+        "fields terminated by ','": "",
+        "collection items terminated by '-'": "",
+        "map keys terminated by ':'": "",
+        "store as textfile;": ""
+      },
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "id",
+          "defName": "唯一标识",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "2F4165B5-5644-48C7-9C16-4FEC45FB67C8",
+          "id": "58548A97-2C8B-4576-A24A-DB605FDE351E"
+        },
+        {
+          "defKey": "userId",
+          "defName": "用户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "A462863E-E3DA-4E06-A64F-5948E1918E0F"
+        },
+        {
+          "defKey": "area",
+          "defName": "地区",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "EC38D75C-52A8-4359-AD67-D6960B494000"
+        },
+        {
+          "defKey": "areaCode",
+          "defName": "地区编码",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "A1F3FC57-E4AC-4125-B7F5-4DFBB5FDDE0C",
+          "isStandard": true
+        },
+        {
+          "defKey": "tax_type",
+          "defName": "税表类型",
+          "comment": "init：历史税表、sb：申报税表",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "A2FDA95B-CB89-4E69-BE9E-560967F831D6",
+          "isStandard": true
+        },
+        {
+          "defKey": "nsqxbm",
+          "defName": "纳税期限",
+          "comment": "月 季 次 年 半年",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "17A4A4A6-0135-45D0-BF77-D5E4DB1975D9",
+          "isStandard": true
+        },
+        {
+          "defKey": "tableIndCode",
+          "defName": "表指标",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "4F689DAA-8477-4FE5-93E6-BAAA5B884A48",
+          "isStandard": true
+        },
+        {
+          "defKey": "tableIndName",
+          "defName": "表名称",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "9B99F162-5099-4149-BF7F-9E8325B700D0"
+        },
+        {
+          "defKey": "qymc",
+          "defName": "企业名称",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "060A082B-68A1-4D72-8335-E4E55D9BFB57"
+        },
+        {
+          "defKey": "linkRelPath",
+          "defName": "访问相对连接",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 5550,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "A7262084-5B60-49A9-9A6F-33D28F72BA37"
+        },
+        {
+          "defKey": "comment",
+          "defName": "备注",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 5550,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "7F7F88B8-3CB4-49B3-BA0C-52B7C72B340C"
+        },
+        {
+          "defKey": "updateDate",
+          "defName": "更新时间",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
+          "id": "125129B9-D1FA-496F-8D57-75E21DD854B7"
+        },
+        {
+          "defKey": "addDate",
+          "defName": "添加时间",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "current_timestamp",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
+          "id": "22D7EE2D-8036-46ED-88E0-C2342F1343DD"
+        }
+      ],
+      "correlations": [],
+      "indexes": []
+    },
+    {
+      "id": "1ED49D95-59B9-49A0-9625-A97B3FA91712",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "ZMMMirrRecord",
+      "defName": "镜像原始记录",
+      "comment": "",
+      "properties": {
+        "partitioned by": "(date string)",
+        "row format delimited": "",
+        "fields terminated by ','": "",
+        "collection items terminated by '-'": "",
+        "map keys terminated by ':'": "",
+        "store as textfile;": ""
+      },
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "id",
+          "defName": "唯一标识",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "2F4165B5-5644-48C7-9C16-4FEC45FB67C8",
+          "id": "11324BD3-4507-42D0-8166-CF623D146DC3"
+        },
+        {
+          "defKey": "userId",
+          "defName": "用户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "004145F8-CDF8-466A-893B-564CFBF37037"
+        },
+        {
+          "defKey": "cosUrl",
+          "defName": "cos存储地址",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 100,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "E4317BDB-0F45-4577-99AF-5B353C65C694"
+        },
+        {
+          "defKey": "updateDate",
+          "defName": "更新时间",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
+          "id": "4C3D8781-DD90-4949-BA65-0EBF7E3BBB14"
+        },
+        {
+          "defKey": "addDate",
+          "defName": "添加时间",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "current_timestamp",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
+          "id": "923CC0BF-5C6C-4329-AF68-0305CC0CF7F9"
+        },
+        {
+          "defKey": "area",
+          "defName": "地区",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "refDict": "",
+          "extProps": {},
+          "id": "8D824980-46DA-4095-BEDB-92F13D89FF6D"
+        },
+        {
+          "defKey": "areaCode",
+          "defName": "地区编码",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "refDict": "",
+          "extProps": {},
+          "id": "8F146645-0668-4F67-BA83-AAAA0FECB2B0"
+        },
+        {
+          "defKey": "tableIndCode",
+          "defName": "表指标",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "refDict": "",
+          "extProps": {},
+          "id": "D41C1A68-42A6-4612-AB98-DED6D9ED7579"
+        },
+        {
+          "defKey": "tableIndName",
+          "defName": "表名称",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "refDict": "",
+          "extProps": {},
+          "id": "E11F3D3F-23C6-4520-86C4-7BDFF22C1B4C"
+        },
+        {
+          "defKey": "gatherer",
+          "defName": "采集人",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "4B857E31-458E-40B1-B181-D2EBA034EBF9"
+        },
+        {
+          "defKey": "channel",
+          "defName": "采集渠道",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "EC53BB4C-A1ED-49A4-9E74-9952EBB37F19"
+        },
+        {
+          "defKey": "qymc",
+          "defName": "企业名称",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "refDict": "",
+          "extProps": {},
+          "id": "D185E8BE-ADD8-42B9-8A20-19DA02BFAF15"
+        }
+      ],
+      "correlations": [],
+      "indexes": []
+    },
+    {
+      "id": "4CBA6DEA-CF7D-44CA-9C0B-66B15897CA24",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "ZTCTaxMatchRecord",
+      "defName": "智能税表匹配记录",
+      "comment": "",
+      "properties": {
+        "partitioned by": "(date string)",
+        "row format delimited": "",
+        "fields terminated by ','": "",
+        "collection items terminated by '-'": "",
+        "map keys terminated by ':'": "",
+        "store as textfile;": ""
+      },
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "id",
+          "defName": "唯一标识",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "2F4165B5-5644-48C7-9C16-4FEC45FB67C8",
+          "id": "76BBC7DA-9499-4D19-8F5D-55ED41C9309C"
+        },
+        {
+          "defKey": "userId",
+          "defName": "用户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "CF11B7AC-63C4-41C0-A4F6-E12EFE7312DA"
+        },
+        {
+          "defKey": "env",
+          "defName": "环境",
+          "comment": "测试、生产",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "102C5503-ACED-427A-A2BC-C6B654272345"
+        },
+        {
+          "defKey": "areaCode",
+          "defName": "地区编码",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "F20CC9E4-9E90-42BB-9B51-DB0CA7AA3DE3",
+          "isStandard": true
+        },
+        {
+          "defKey": "area",
+          "defName": "地区名称",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "E2611556-BAF6-4A5C-8E54-09FA7AD1B564",
+          "isStandard": true
+        },
+        {
+          "defKey": "tableIndCode",
+          "defName": "表指标",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "64DEBA4D-B0F1-4E6D-B003-2EAC66C0DA3A",
+          "isStandard": true
+        },
+        {
+          "defKey": "sheetIndCode",
+          "defName": "页指标",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "6E48D48A-59DB-4EFC-8E25-A1CFF7378CFF",
+          "isStandard": true
+        },
+        {
+          "defKey": "taxType",
+          "defName": "税表类型",
+          "comment": "init：历史税表、sb：申报税表",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "8BF101A1-7936-49F3-8465-2CF01122F5CE",
+          "isStandard": true
+        },
+        {
+          "defKey": "linkUrl",
+          "defName": "连接地址",
+          "comment": "连接地址",
+          "type": "VARCHAR",
+          "len": 1024,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "BA8EE0F4-DBB3-4B20-B901-64353A37288F"
+        },
+        {
+          "defKey": "isRematch",
+          "defName": "是否重新匹配",
+          "comment": "1：是，0 否",
+          "type": "INT",
+          "len": 1,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "C3F89256-5832-4384-931A-4724DC9DED29"
+        },
+        {
+          "defKey": "ManualCellCount",
+          "defName": "人工匹配单元格数量",
+          "comment": "人工干预的单元匹配个次数",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "2E3C7994-F64B-4644-A813-41FEEA6587EB"
+        },
+        {
+          "defKey": "ManualOperateCount",
+          "defName": "人工操作数量",
+          "comment": "页面操作 单元格 复制次数",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "9D642976-2268-4649-9CA3-012F9BE8C92A"
+        },
+        {
+          "defKey": "totalCellCount",
+          "defName": "总单元格数量",
+          "comment": "sheet页有指标的格子数量总和",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "E42B2019-035E-41F3-886C-0BB2BCC77D2F"
+        },
+        {
+          "defKey": "autoMatchCellCount",
+          "defName": "首次匹配数量",
+          "comment": "自动匹配算法干预的匹配数量",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "2FAC9448-E9ED-4850-A86B-5557D3607960"
+        },
+        {
+          "defKey": "oprateName",
+          "defName": "操作人",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "FB6B2628-333C-41C1-8FF4-6A53500FF373"
+        },
+        {
+          "defKey": "updateDate",
+          "defName": "更新时间",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
+          "id": "49D9091A-3DBB-4E88-8ACF-10BE585D864E"
+        },
+        {
+          "defKey": "addDate",
+          "defName": "添加时间",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "current_timestamp",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
+          "id": "A02B645C-CD2E-4D50-BBB6-759EE74C59AE"
+        }
+      ],
+      "correlations": [],
+      "indexes": []
     }
   ],
   "views": [],
@@ -6378,6 +7374,29 @@
       "refDiagrams": [],
       "refDicts": [],
       "id": "78446330-DF95-429C-B7A0-8C1D6B820BC5"
+    },
+    {
+      "defKey": "magic-mirror",
+      "defName": "税局镜像文件村春",
+      "refEntities": [
+        "6798B29F-9CD2-4D70-A902-C08DCFF9B594",
+        "1ED49D95-59B9-49A0-9625-A97B3FA91712"
+      ],
+      "refViews": [],
+      "refDiagrams": [],
+      "refDicts": [],
+      "id": "C6EDDCC5-A162-47DF-B697-0CFCB2904CC2"
+    },
+    {
+      "defKey": "tax-calc",
+      "defName": "智能税表-统计",
+      "refEntities": [
+        "4CBA6DEA-CF7D-44CA-9C0B-66B15897CA24"
+      ],
+      "refViews": [],
+      "refDiagrams": [],
+      "refDicts": [],
+      "id": "8ED42CE3-3FE7-4761-89CB-FC6FDF95EECD"
     }
   ],
   "dataTypeMapping": {
@@ -7108,6 +8127,326 @@
         }
       ],
       "id": "F30202B9-4B5D-4CE7-87CE-B3890C84D3F2"
+    },
+    {
+      "defKey": "taxReport",
+      "defName": "报税相关",
+      "fields": [
+        {
+          "defKey": "area_code",
+          "defName": "地区编码",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "E43C000B-7CDA-424B-9F91-FA25B2A98981"
+        },
+        {
+          "defKey": "area",
+          "defName": "地区名称",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "8196B462-9CF0-4B57-A502-B77CA0E7DE06"
+        },
+        {
+          "defKey": "cell_ind_code",
+          "defName": "单元格指标",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "020D9E48-5305-49A6-9A4E-8351EAB9ACD4"
+        },
+        {
+          "defKey": "cell_type",
+          "defName": "单元格类型",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "B2FE96FD-39F3-4C0D-8388-E93354B59051"
+        },
+        {
+          "defKey": "table_ind_code",
+          "defName": "表指标",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "0E18F070-1778-47DA-B8D2-0CEDC675161F"
+        },
+        {
+          "defKey": "period",
+          "defName": "所属账期",
+          "comment": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "3C386C19-A5BD-4CCC-AC6F-98C7838DBDA0"
+        },
+        {
+          "defKey": "formula_id",
+          "defName": "单元格指标公式ID",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "DE0B654C-F48A-4525-AA64-E0BC0A60C634"
+        },
+        {
+          "defKey": "sheet_ind_code",
+          "defName": "页指标",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "8C6ED38D-9BC5-48ED-BD0D-73CA0D73DF14"
+        },
+        {
+          "defKey": "zsxmdm",
+          "defName": "征收项目代码",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "014E1623-81B2-4BA4-8930-FF533CB9C308"
+        },
+        {
+          "defKey": "zsxmmc",
+          "defName": "征收项目名称-中文语义",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "7A11DB52-A31B-48EE-AF48-F61717D01507"
+        },
+        {
+          "defKey": "zsxmbm",
+          "defName": "征收项目编码-英文语义",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "740F763F-C1EC-47EA-ABE4-24115942E4E9"
+        },
+        {
+          "defKey": "zspmdm",
+          "defName": "征收品目代码",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "64EC89A2-162B-4405-B23C-801C35B4F309"
+        },
+        {
+          "defKey": "zszmdm",
+          "defName": "征收子目编码-英文语义",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "F3472326-8C35-4C31-AAE1-6FE9C1A6675A"
+        },
+        {
+          "defKey": "zszmbm",
+          "defName": "征收子目代码-字段编码",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "FB8D1002-E23E-4C61-A12B-1E663DECBBA0"
+        },
+        {
+          "defKey": "zszmmc",
+          "defName": "征收子目名称-中文语义",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "4F001FE6-30BF-4355-B5F6-44ACD6592FCF"
+        },
+        {
+          "defKey": "tax_type",
+          "defName": "税表类型",
+          "comment": "init：历史税表、sb：申报税表",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "69BC8709-2C82-4296-95DD-A13332612345"
+        },
+        {
+          "defKey": "nsqxbm",
+          "defName": "纳税期限",
+          "comment": "月 季 次 年 半年",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
+          "id": "B03E00F9-64A4-45D2-95D1-66A6B26B8BEF"
+        }
+      ],
+      "id": "913C011E-2AD0-4A02-9AA6-7C626D55C920"
+    },
+    {
+      "defKey": "aaa",
+      "defName": "aaa",
+      "fields": [],
+      "id": "21D4D0D8-BEC6-4A9A-B2E4-796E35C0B189"
+    },
+    {
+      "defKey": "vbb",
+      "defName": "bbb",
+      "fields": [],
+      "id": "3EBBFF5D-B101-4BB8-8567-C227F07BA70D"
+    },
+    {
+      "defKey": "ddd",
+      "defName": "ddd",
+      "fields": [],
+      "id": "B33CDA11-3665-4791-9415-44B88FBE6775"
+    },
+    {
+      "defKey": "eee",
+      "defName": "eee",
+      "fields": [],
+      "id": "CA3DC198-FDA5-4104-BCFD-152142BAF91C"
     }
   ],
   "dbConn": [
