@@ -14,6 +14,7 @@ limitations under the License.*/
 
 package apijson.boot;
 
+import apijson.RequestMethod;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.PropertyFilter;
@@ -163,7 +164,7 @@ public class DemoApplication implements WebServerFactoryCustomizer<ConfigurableS
 
       @Override
       public Parser<Long> createParser() {
-        return new DemoParser();
+        return new DemoParser(null,false);
       }
 
       @Override
