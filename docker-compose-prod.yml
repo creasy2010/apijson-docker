@@ -2,7 +2,7 @@ version: '3'
 services:
   application:
     platform: linux/amd64
-    image: yangxiaodong/apijson:0.0.1-beta.3
+    image: yangxiaodong/apijson:0.0.1-beta.4
     environment:
       - ADMIN_HOST=admin
       - REDIS_HOST=redis1
