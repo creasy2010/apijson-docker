@@ -4,7 +4,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: yangxiaodong/apijson:0.0.1-beta.1
+    image: yangxiaodong/apijson:0.0.1-beta.4
     environment:
       - ADMIN_HOST=admin
       - REDIS_HOST=redis1

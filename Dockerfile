@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM --platform=linux/amd64 openjdk:8-jdk-alpine
 # 时区设置
 #RUN mkdir -p /usr/share/zoneinfo/Asia/
 #RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
