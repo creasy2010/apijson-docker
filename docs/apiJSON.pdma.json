@@ -2,9 +2,9 @@
   "name": "apiJSON",
   "describe": "apiJSON",
   "avatar": "",
-  "version": "4.2.0",
+  "version": "4.1.3",
   "createdTime": "2022-9-21 14:57:37",
-  "updatedTime": "2022-11-1 16:58:22",
+  "updatedTime": "2022-11-2 01:05:56",
   "dbConns": [],
   "profile": {
     "default": {
@@ -7827,16 +7827,7 @@
           "id": "B5EBB0E3-4F23-48B4-AB4F-9F1E792EF9B2"
         }
       ],
-      "correlations": [
-        {
-          "myField": "023DD06F-5C10-4F93-8A2E-5EC795367390",
-          "refEntity": "98C28448-CFA0-4BA2-8644-A9BEDA87818D",
-          "refField": "C25454D2-5FE6-4B3B-BCD0-704BEF5F25FE",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -8047,24 +8038,7 @@
           "id": "948872FF-3155-4F25-808B-2962C44F809F"
         }
       ],
-      "correlations": [
-        {
-          "myField": "ADBC748F-9F0D-4958-9B74-C509EB07809D",
-          "refEntity": "83DC3BBD-BC1D-4792-93B4-17D7EF6F82E2",
-          "refField": "62C428DE-1050-4343-9936-06E4B1BEEDE5",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "AAC326A9-6846-430E-A36B-414E999E55AA",
-          "refEntity": "98C28448-CFA0-4BA2-8644-A9BEDA87818D",
-          "refField": "C25454D2-5FE6-4B3B-BCD0-704BEF5F25FE",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -8275,16 +8249,7 @@
           "id": "C73ED25C-83C0-432D-AC28-8F76D764696B"
         }
       ],
-      "correlations": [
-        {
-          "myField": "6CAC505C-68BD-47F4-B6E8-D71573272748",
-          "refEntity": "98C28448-CFA0-4BA2-8644-A9BEDA87818D",
-          "refField": "C25454D2-5FE6-4B3B-BCD0-704BEF5F25FE",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -8478,24 +8443,7 @@
           "id": "070D9D9A-A4B5-4963-A8BB-7180441CEFB3"
         }
       ],
-      "correlations": [
-        {
-          "myField": "7DEBC50F-1C49-45FF-9039-D0B7E38A7B54",
-          "refEntity": "36E836B1-02C0-4DC0-8D9E-34C1734FE4FF",
-          "refField": "50B25E92-6D4F-46DC-BC26-DF2986B05446",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "D5E7A49A-71DD-4665-9DE2-1B6410EFC333",
-          "refEntity": "98C28448-CFA0-4BA2-8644-A9BEDA87818D",
-          "refField": "C25454D2-5FE6-4B3B-BCD0-704BEF5F25FE",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -8883,16 +8831,7 @@
           "id": "C8242B72-24E9-4E55-ABBE-DA7679F9EB4B"
         }
       ],
-      "correlations": [
-        {
-          "myField": "F34C5071-8B35-4673-B65A-CBBDB1AD93BF",
-          "refEntity": "10F07732-F98F-4CAC-A4A2-D1F7CF3DA76C",
-          "refField": "6CAC505C-68BD-47F4-B6E8-D71573272748",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     }
   ],
