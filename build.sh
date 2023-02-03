@@ -1,3 +1,1 @@
-docker-compose down -v ;
-git pull
-docker-compose up -d;
+docker-compose -f docker-compose-build.yml build
