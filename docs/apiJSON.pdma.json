@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.2.0",
   "createdTime": "2022-9-21 14:57:37",
-  "updatedTime": "2023-2-4 07:02:43",
+  "updatedTime": "2023-2-4 16:37:39",
   "dbConns": [],
   "profile": {
     "default": {
@@ -13155,6 +13155,23 @@
           "extProps": {},
           "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
           "id": "B0BCBF0E-D5FF-4481-B321-A5B416645FBF"
+        },
+        {
+          "defKey": "commitInd",
+          "defName": "Commits on master",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "AFE131E9-25D4-4C74-97D9-A7FE0C666436"
         },
         {
           "defKey": "forkInd",
