@@ -89,6 +89,10 @@ public class DemoApplication implements WebServerFactoryCustomizer<ConfigurableS
     APIJSONParser.MAX_QUERY_COUNT= 500;
     APIJSONParser.MAX_QUERY_PAGE= 1000000;
     APIJSONParser.MAX_ARRAY_COUNT=1000;
+    APIJSONParser.MAX_OBJECT_COUNT=200;
+    APIJSONParser.MAX_QUERY_DEPTH=5;
+    APIJSONParser.MAX_UPDATE_COUNT=200;
+
     APIJSONApplication.init();
   }
 
